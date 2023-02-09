@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
+@font-face {
+    font-family: digit;
+    src: url(fonts/CursedTimerUlil-Aznm.ttf);
+    font-weight: 600;
+}
+
+
+*::before,
+*::after,
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+* button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: antiquewhite;
+    text-transform: uppercase;
+    font-family: digit;
+    font-size: 20px;
+    padding: 10px 12px;
+}
+
+
+body {
+    /* Photo by Daniel Absi: https://www.pexels.com/photo/basketball-hoop-on-court-680074/ */
+    background-image: url(image/pexels-daniel-absi-680074.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: antiquewhite;
+    word-spacing: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid orange; */
+    background: black;
+    width: 600px;
+}
+
+.wrapper {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+}
+
+.home-team,
+.visitors-team {
+    flex-grow: 1;
+}
+
+.home-team,
+.visitors-team,
+.game-data {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.score {
+    padding: 20px;
+}
+
+.action {
+    border: 1px solid antiquewhite;
+}
+
+.period {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 700;
+}
+
+.ionicon {
+    max-width: 45px;
+    fill: antiquewhite;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.left {
+    transform: rotateX(-90deg);
+}
+
+.right {
+    transform: rotateX(90deg);
+}
+
+.possession {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+
+justify-self: center;
+align-content: center;
+}
+
+.restart-button button {
+    background: #59ADFF;
+    width: 100%;
+}
+
+.middle {
+    align-self: center;
+}
+
+.quarter {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#home-score, 
+#away-score {
+    font-family: digit;
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.tag {
+    font-size: 35px;
+}
+
+.board {
+    font-size: 20px;
+}
+

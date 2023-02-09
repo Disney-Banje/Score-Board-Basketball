@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Game ScoreBoard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="wrapper">
+            <div class="home-team">
+               <div>
+                <h1 class="tag" id="home-tag">home</h1>
+               </div> 
+               <div>
+                <p id="home-score">0</p>
+               </div>
+               <div>
+                <button class="action" onclick="homethreepoint()">+3</button>
+                <button class="action" onclick="twoopoint()">+2</button>
+                <button class="action" onclick="onepoint()">+1</button>
+               </div>
+               <div>
+                <button onclick="homefouls()">fouls</button>
+                <p id="home-fouls-call">0</p>
+               </div>
+            </div>
+            <div class="game-data">
+                <div>
+                    <h1 class="board">scoreboard</h1>
+                </div>
+            </div>
+            <div class="visitors-team">
+                <div>
+                    <h1 class="tag" id="guest-tag">guest</h1>
+                   </div> 
+                   <div>
+                    <p id="away-score">0</p>
+                   </div>
+                   <div>
+                    <button class="action" onclick="awaythreepoint()">+3</button>
+                    <button class="action" onclick="awaytwoopoint()">+2</button>
+                    <button class="action"onclick="awayonepoint()">+1</button>
+                   </div>
+                   <div>
+                    <button onclick="guestfouls()">fouls</button>
+                    <p id="guest-fouls-call">0</p>
+                   </div>
+            </div>
+        </div>
+        <div class="restart-button">
+            <button onclick="restart()">new game </button>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
